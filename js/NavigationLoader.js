@@ -5,10 +5,10 @@ $("#navigate-3d-gizmo").css("visibility", "hidden");
 
 $('.delete-inter-btn')
 .on('mouseenter', function() {
-    $('.delete-log').attr('src', '../images/assets/delete_black.png');
+    $('.delete-log').attr('src', './images/assets/delete_black.png');
 })
 .on('mouseleave', function() {
-    $('.delete-log').attr('src', '../images/assets/delete_red.png');
+    $('.delete-log').attr('src', './images/assets/delete_red.png');
 });
 
 function OnSelectNavigationIcon(){

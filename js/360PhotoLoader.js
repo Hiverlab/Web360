@@ -31,13 +31,13 @@ function OnClose360PhotoDlg(){
 function Init360PhotosMenu(){
 		
 	//init media menu tabs
-	$("#360-photo-user-btn").find("img.media-menu-img").attr("src", "../images/assets/folder.png");
+	$("#360-photo-user-btn").find("img.media-menu-img").attr("src", "./images/assets/folder.png");
 	$("#360-photo-user-btn").find("label.media-menu-txt").css("color", "#666666");
 	
-	$("#360-photo-team-btn").find("img.media-menu-img").attr("src", "../images/assets/share.png")
+	$("#360-photo-team-btn").find("img.media-menu-img").attr("src", "./images/assets/share.png")
 	$("#360-photo-team-btn").find("label.media-menu-txt").css("color", "#666666");
 	
-	$("#360-photo-musketeers-btn").find("img.media-menu-img").attr("src", "../images/assets/share.png")
+	$("#360-photo-musketeers-btn").find("img.media-menu-img").attr("src", "./images/assets/share.png")
 	$("#360-photo-musketeers-btn").find("label.media-menu-txt").css("color", "#666666");
 }
 
@@ -142,7 +142,7 @@ function ShowLocal360Photos(){
 	Init360PhotosMenu();
 	
 	g_360MenuName = "local";
-	$("#360-photo-user-btn").find("img.media-menu-img").attr("src", "../images/assets/folder_selected.png");
+	$("#360-photo-user-btn").find("img.media-menu-img").attr("src", "./images/assets/folder_selected.png");
 	$("#360-photo-user-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#search360PhotoField").val("");
 	Loading360Photos(g_user360Array);
@@ -152,7 +152,7 @@ function ShowTeam360Photos(){
 	Init360PhotosMenu();
 	
 	g_360MenuName = "team";
-	$("#360-photo-team-btn").find("img.media-menu-img").attr("src", "../images/assets/share_selected.png")
+	$("#360-photo-team-btn").find("img.media-menu-img").attr("src", "./images/assets/share_selected.png")
 	$("#360-photo-team-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#search360PhotoField").val("");
 	Loading360Photos(g_team360Array);
@@ -162,7 +162,7 @@ function ShowMusketeer360Photos(){
 	Init360PhotosMenu();
 	
 	g_360MenuName = "musket";
-	$("#360-photo-musketeers-btn").find("img.media-menu-img").attr("src", "../images/assets/share_selected.png")
+	$("#360-photo-musketeers-btn").find("img.media-menu-img").attr("src", "./images/assets/share_selected.png")
 	$("#360-photo-musketeers-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#search360PhotoField").val("");
 	Loading360Photos(g_musket360Array);

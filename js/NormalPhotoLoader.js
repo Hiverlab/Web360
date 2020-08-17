@@ -35,13 +35,13 @@ function OnCloseNormalPhotoDlg(){
 function InitNormalPhotosMenu(){
 		
 	//init media menu tabs
-	$("#normal-photo-user-btn").find("img.media-menu-img").attr("src", "../images/assets/folder.png");
+	$("#normal-photo-user-btn").find("img.media-menu-img").attr("src", "./images/assets/folder.png");
 	$("#normal-photo-user-btn").find("label.media-menu-txt").css("color", "#666666");
 	
-	$("#normal-photo-team-btn").find("img.media-menu-img").attr("src", "../images/assets/share.png")
+	$("#normal-photo-team-btn").find("img.media-menu-img").attr("src", "./images/assets/share.png")
 	$("#normal-photo-team-btn").find("label.media-menu-txt").css("color", "#666666");
 	
-	$("#normal-photo-musketeers-btn").find("img.media-menu-img").attr("src", "../images/assets/share.png")
+	$("#normal-photo-musketeers-btn").find("img.media-menu-img").attr("src", "./images/assets/share.png")
 	$("#normal-photo-musketeers-btn").find("label.media-menu-txt").css("color", "#666666");
 }
 
@@ -148,7 +148,7 @@ function ShowLocalNormalPhotos(){
 	InitNormalPhotosMenu();
 	
 	g_normalMenuName = "local";
-	$("#normal-photo-user-btn").find("img.media-menu-img").attr("src", "../images/assets/folder_selected.png");
+	$("#normal-photo-user-btn").find("img.media-menu-img").attr("src", "./images/assets/folder_selected.png");
 	$("#normal-photo-user-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#searchNormalPhotoField").val("");
 	LoadingNormalPhotos(g_userPhotoArray);
@@ -158,7 +158,7 @@ function ShowTeamNormalPhotos(){
 	InitNormalPhotosMenu();
 	
 	g_normalMenuName = "team";
-	$("#normal-photo-team-btn").find("img.media-menu-img").attr("src", "../images/assets/share_selected.png")
+	$("#normal-photo-team-btn").find("img.media-menu-img").attr("src", "./images/assets/share_selected.png")
 	$("#normal-photo-team-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#searchNormalPhotoField").val("");
 	LoadingNormalPhotos(g_teamPhotoArray);
@@ -168,7 +168,7 @@ function ShowMusketeerNormalPhotos(){
 	InitNormalPhotosMenu();
 	
 	g_normalMenuName = "musket";
-	$("#normal-photo-musketeers-btn").find("img.media-menu-img").attr("src", "../images/assets/share_selected.png")
+	$("#normal-photo-musketeers-btn").find("img.media-menu-img").attr("src", "./images/assets/share_selected.png")
 	$("#normal-photo-musketeers-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#searchNormalPhotoField").val("");
 	LoadingNormalPhotos(g_musketPhotoArray);
@@ -304,8 +304,8 @@ function OnBcakPhotoPage(){
 function OnAddPhotoPage(){
 	HideEditThumbPage();
 	$("#photointer-container").css("display", "flex");
-	$("#photointer-log-icon").attr("src", "../images/assets/image_icon.png");
-	$("#photointer-log").attr("src", "../images/assets/image_icon.png");
+	$("#photointer-log-icon").attr("src", "./images/assets/image_icon.png");
+	$("#photointer-log").attr("src", "./images/assets/image_icon.png");
 	
 	$("#nav-photo-container").children("div:first").remove();
 	$("#nav-photo-container").prepend("<img class='interacitve-photo-log' id='interacitve-photo-img' src='images/assets/10.png'>");

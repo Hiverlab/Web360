@@ -48,13 +48,13 @@ function OnCloseVideoDlg(){
 function InitVideosMenu(){
 		
 	//init media menu tabs
-	$("#video-user-btn").find("img.media-menu-img").attr("src", "../images/assets/folder.png");
+	$("#video-user-btn").find("img.media-menu-img").attr("src", "./images/assets/folder.png");
 	$("#video-user-btn").find("label.media-menu-txt").css("color", "#666666");
 	
-	$("#video-team-btn").find("img.media-menu-img").attr("src", "../images/assets/share.png")
+	$("#video-team-btn").find("img.media-menu-img").attr("src", "./images/assets/share.png")
 	$("#video-team-btn").find("label.media-menu-txt").css("color", "#666666");
 	
-	$("#video-musketeers-btn").find("img.media-menu-img").attr("src", "../images/assets/share.png")
+	$("#video-musketeers-btn").find("img.media-menu-img").attr("src", "./images/assets/share.png")
 	$("#video-musketeers-btn").find("label.media-menu-txt").css("color", "#666666");
 }
 
@@ -145,7 +145,7 @@ function LoadingVideos(arrayVideo = []){
 
 		itemHtml = `<div class="col-md-4 media-logo" id="video-logo-container-`+ i +`">
 						<button class="media-logo-btn" onclick="OnVideoSelect(`+ i +`);" >
-							<img class="img-fluid media-logo-img" src="../images/assets/5.png" alt="">
+							<img class="img-fluid media-logo-img" src="./images/assets/5.png" alt="">
 						</button>
 						<label class="media-menu-txt">` + strName + `</label>
 					</div>`;
@@ -161,7 +161,7 @@ function ShowLocalVideos(){
 	InitVideosMenu();
 	
 	g_videoMenuName = "local";
-	$("#video-user-btn").find("img.media-menu-img").attr("src", "../images/assets/folder_selected.png");
+	$("#video-user-btn").find("img.media-menu-img").attr("src", "./images/assets/folder_selected.png");
 	$("#video-user-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#searchVideoField").val("");
 	LoadingVideos(g_userVideoArray);
@@ -171,7 +171,7 @@ function ShowTeamVideos(){
 	InitVideosMenu();
 	
 	g_normalMenuName = "team";
-	$("#video-team-btn").find("img.media-menu-img").attr("src", "../images/assets/share_selected.png")
+	$("#video-team-btn").find("img.media-menu-img").attr("src", "./images/assets/share_selected.png")
 	$("#video-team-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#searchVideoField").val("");
 	LoadingVideos(g_teamVideoArray);
@@ -181,7 +181,7 @@ function ShowMusketeerVideos(){
 	InitVideosMenu();
 	
 	g_normalMenuName = "musket";
-	$("#video-musketeers-btn").find("img.media-menu-img").attr("src", "../images/assets/share_selected.png")
+	$("#video-musketeers-btn").find("img.media-menu-img").attr("src", "./images/assets/share_selected.png")
 	$("#video-musketeers-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#searchVideoField").val("");
 	LoadingVideos(g_musketVideoArray);
@@ -261,13 +261,13 @@ function OnCloseVideoThumbDlg(){
 function InitVideosThumbMenu(){
 		
 	//init media menu tabs
-	$("#video-thumb-user-btn").find("img.media-menu-img").attr("src", "../images/assets/folder.png");
+	$("#video-thumb-user-btn").find("img.media-menu-img").attr("src", "./images/assets/folder.png");
 	$("#video-thumb-user-btn").find("label.media-menu-txt").css("color", "#666666");
 	
-	$("#video-thumb-team-btn").find("img.media-menu-img").attr("src", "../images/assets/share.png")
+	$("#video-thumb-team-btn").find("img.media-menu-img").attr("src", "./images/assets/share.png")
 	$("#video-thumb-team-btn").find("label.media-menu-txt").css("color", "#666666");
 	
-	$("#video-thumb-musketeers-btn").find("img.media-menu-img").attr("src", "../images/assets/share.png")
+	$("#video-thumb-musketeers-btn").find("img.media-menu-img").attr("src", "./images/assets/share.png")
 	$("#video-thumb-musketeers-btn").find("label.media-menu-txt").css("color", "#666666");
 }
 
@@ -374,7 +374,7 @@ function ShowLocalVideoThumbs(){
 	InitVideosThumbMenu();
 	
 	g_videoThumbMenuName = "local";
-	$("#video-thumb-user-btn").find("img.media-menu-img").attr("src", "../images/assets/folder_selected.png");
+	$("#video-thumb-user-btn").find("img.media-menu-img").attr("src", "./images/assets/folder_selected.png");
 	$("#video-thumb-user-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#searchVideoThumbField").val("");
 	LoadingVideoThumbs(g_userVideoThumbArray);
@@ -384,7 +384,7 @@ function ShowTeamVideoThumbs(){
 	InitVideosThumbMenu();
 	
 	g_videoThumbMenuName = "team";
-	$("#video-thumb-team-btn").find("img.media-menu-img").attr("src", "../images/assets/share_selected.png")
+	$("#video-thumb-team-btn").find("img.media-menu-img").attr("src", "./images/assets/share_selected.png")
 	$("#video-thumb-team-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#searchVideoField").val("");
 	LoadingVideoThumbs(g_teamVideoThumbArray);
@@ -394,7 +394,7 @@ function ShowMusketeerVideoThumbs(){
 	InitVideosThumbMenu();
 	
 	g_videoThumbMenuName = "musket";
-	$("#video-thumb-musketeers-btn").find("img.media-menu-img").attr("src", "../images/assets/share_selected.png")
+	$("#video-thumb-musketeers-btn").find("img.media-menu-img").attr("src", "./images/assets/share_selected.png")
 	$("#video-thumb-musketeers-btn").find("label.media-menu-txt").css("color", "#FBB03B");
 	$("#searchVideoField").val("");
 	LoadingVideoThumbs(g_musketVideoThumbArray);
@@ -543,8 +543,8 @@ function OnBackVideoThumbPage(){
 function OnAddVideoPage(){
 	HideEditVideoThumbPage();
 	$("#videointer-container").css("display", "flex");
-	$("#videointer-log").attr("src", "../images/assets/video_icon.png");
-	$("#videointer-log-icon").attr("src", "../images/assets/video_icon.png");
+	$("#videointer-log").attr("src", "./images/assets/video_icon.png");
+	$("#videointer-log-icon").attr("src", "./images/assets/video_icon.png");
 	
 //	$("#interacitve-video-img").attr("src", g_urlVideoThumb);
 	$("#nav-video-container").children("div:first").remove();

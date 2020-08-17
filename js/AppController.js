@@ -88,7 +88,7 @@ function OnEditSceneTitle(i){
 	var editBtn = $("#scene-item-container-" + i).find("button.edit-btn");
 	
 	if(titleField.is('[readonly]')){
-		editBtn.css('background-image', 'url("../images/assets/edit_red_pan.png")');
+		editBtn.css('background-image', 'url("./images/assets/edit_red_pan.png")');
 		titleField.removeAttr('readonly');
 		titleField.css("background-color", "#484848");
 		titleField.css("border", "1px solid #d2d2d2");
@@ -99,7 +99,7 @@ function OnEditSceneTitle(i){
 		titleField.val(tmpStr);
 	}
 	else{
-		editBtn.css('background-image', 'url("../images/assets/edit_white_pan.png")');
+		editBtn.css('background-image', 'url("./images/assets/edit_white_pan.png")');
 		titleField.attr('readonly','readonly');
 		titleField.css("background-color", "#202126");
 		titleField.css("border", "0px solid #d2d2d2");
@@ -141,8 +141,8 @@ function OnNavigationMenuCliked(){
 	HideAllMenuDlg();
 	$("#navigation-tab").css("opacity", "1");
 	$("#navigate-container").css("display", "flex");
-	$("#navigate-log").attr("src", "../images/assets/navigation_icon.png");
-	$("#navigate-log-icon").attr("src", "../images/assets/navigation_icon.png");
+	$("#navigate-log").attr("src", "./images/assets/navigation_icon.png");
+	$("#navigate-log-icon").attr("src", "./images/assets/navigation_icon.png");
 	$("#naviagte-item-container").css("width", "10.39vw")
 	$("#naviagte-item-container").css("height", "10.39vw")
 	reset3dgizmoNav();
